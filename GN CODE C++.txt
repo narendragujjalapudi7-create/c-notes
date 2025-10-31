@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class car {
+    public://public aAess Specifier
+    string brand;
+    string model; 
+   int price;
+   int year;
+   //Function to display the out put
+   void display()
+   {
+       cout<<"year of manufacturing"<<year<<endl;
+       cout<<"brand name"<<brand<<endl;
+       cout<<"model"<<model<<endl;
+       cout<<"Price"<<price<<endl;
+   }
+   
+};
+int main (){  
+    car car1; //creating an object of the class 
+    car1.brand="bmw";
+    car1.model="b-class";
+    car1.price=500000;
+    car1.year=2024;
+    
+    car car2; //creating an object of the class 
+    car2.brand="gm";
+    car2.model="m-class";
+    car2.price=9800000;
+    car2.year=2028;
+    
+    
+    
+    car1.display(); // Display the o/p using function
+    car2.display(); // Display the o/p using function
+    return 0;
+    
+}
